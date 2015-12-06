@@ -4,5 +4,5 @@ Unity3D implementation of Nature of Code examples. Primitives are created using 
 
 ## Links
 
-* [Nature of Codes](https://github.com/cfloisand/primitives2d-unity)
+* [Nature of Code](http://natureofcode.com/)
 * [Primitives 2D](https://github.com/cfloisand/primitives2d-unity)
