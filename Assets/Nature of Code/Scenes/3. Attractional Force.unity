@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ef6a3268f13ca438d03a372db57708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoverPrefab: {fileID: 136424, guid: a7b3561ac328e2b41bbc200604e70c42, type: 2}
+  MoverPrefab: {fileID: 159782, guid: cc0107d87158feb4bb17d53be585093c, type: 2}
   Number: 10
   MinimumMass: .100000001
   MaximumMass: 1

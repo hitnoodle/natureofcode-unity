@@ -8,6 +8,10 @@ public class Mover : MonoBehaviour
     public Vector2 Velocity;
     public Vector2 Acceleration;
 
+    public float Angle;
+    public float AngularVelocity;
+    public float AngularAcceleration;
+
     [Header("Attractional Attributes")]
     public float MinimumObjectDistance = 1f;
     public float MaximumObjectDistance = 2f;
@@ -41,6 +45,11 @@ public class Mover : MonoBehaviour
         Velocity += Acceleration * Time.deltaTime;
         Location += Velocity * Time.deltaTime;
 
+        AngularAcceleration = Acceleration.x;
+        AngularVelocity += AngularAcceleration * Time.deltaTime;
+        AngularVelocity = Mathf.Clamp(AngularVelocity, -1.5f, 1.5f);
+        Angle += AngularVelocity * Time.deltaTime;
+
         Acceleration *= 0;
     }
 
@@ -72,6 +81,7 @@ public class Mover : MonoBehaviour
     public void Draw()
     {
         _Transform.position = Location;
+        _Transform.Rotate(new Vector3(0, 0, Angle));
     }
 
     #endregion
